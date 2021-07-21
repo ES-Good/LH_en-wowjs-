@@ -1,0 +1,36 @@
+.title{
+    color: #fff;
+    &_big{
+        font-size: $fz-tit-big;
+        font-weight: 800;
+    }
+    &_medium{
+        font-size: $fz-tit-medium;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+    &_small{
+        font-size: $mob-fz-tit-small;
+    }
+    &_mini{
+        font-size: $fz-tit-mini;
+    }
+    &_s-top{
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+    &_line-bottom{
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 10%;
+            background-color: $red;
+            height: 2px;
+            left: 50%;
+            bottom: -25px;
+            transform: translateX(-50%);
+        }
+    }
+}

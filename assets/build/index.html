@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/main.min.css">
+    
+    <title>LEADS HUNTER</title>
+</head>
+<body>
+
+
+<!-- Modal -->
+
+<!--
+    Вопросы и ответы квиз
+
+    1.Вопрос: What do you need help with?
+        Подзаголовок: Answer for 3 questions and choose what you need
+        Ответ: Pay per click advertising, Social Media ads, Content Marketing, Social Media Marketing, Website development, Website redesign, Conversion Rate Optimization, Other
+
+    2.Вопрос: What are your goals?
+        Подзаголовок: Select all that apply
+        Ответы: Get more conversions, Lower my acquisition cost, Improve my ROI, All above, Other
+        Кнопка: Continue
+    3. Last Step!
+
+-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content position-relative">
+            <button type="button" class="btn_modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body p-0">
+                <div class="container-fluid p-0 s-quiz" id="quiz">
+                    <form action="" class="s-quiz__inner d-flex flex-column align-items-center py-5">
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <h2 class="title title_medium text-center">What do you need help with?</h2>
+                                <h3 class="s-quiz__subtitle text-white text-center fw-400">Answer for 3 questions and choose what you need</h3>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap s-quiz__answers-box justify-content-start mb-5">
+                            <div class="form_radio_btn mx-3">
+                                <input id="radio-1" type="radio" name="radio" value="1">
+                                <label for="radio-1">Pay per click advertising</label>
+                            </div>
+
+                            <div class="form_radio_btn mx-3">
+                                <input id="radio-2" type="radio" name="radio" value="2">
+                                <label for="radio-2">Social Media ads</label>
+                            </div>
+
+                            <div class="form_radio_btn mx-3">
+                                <input id="radio-3" type="radio" name="radio" value="3">
+                                <label for="radio-3">Content Marketing</label>
+                            </div>
+
+                            <div class="form_radio_btn mx-3">
+                                <input id="radio-4" type="radio" name="radio" value="4">
+                                <label for="radio-4">Social Media Marketing</label>
+                            </div>
+
+                            <div class="form_radio_btn mx-3">
+                                <input id="radio-5" type="radio" name="radio" value="5">
+                                <label for="radio-5">Website development</label>
+                            </div>
+
+                            <div class="form_radio_btn mx-3">
+                                <input id="radio-6" type="radio" name="radio" value="6">
+                                <label for="radio-6">Website redesign</label>
+                            </div>
+
+                            <div class="form_radio_btn mx-3">
+                                <input id="radio-7" type="radio" name="radio" value="7">
+                                <label for="radio-7">Conversion Rate Optimization</label>
+                            </div>
+
+                            <div class="form_radio_btn mx-3">
+                                <input id="radio-8" type="radio" name="radio" value="8">
+                                <label for="radio-8">Other</label>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center w-100 p-0 m-0">
+                            <button class="btn btn_red btn_s-quiz text-nowrap" type="submit">START MY FREE <br> MARKETING PLAN</button>
+                        </div>
+                    </form>
+                    <!-- last-step -------------------------------------------->
+                    <div class="s-quiz__last-step d-flex flex-column flex-lg-row justify-content-between pt-5 pt-lg-0">
+                        <form action="#" class="s-quiz__last-step__form d-flex flex-column align-items-start">
+                            <h4 class="s-quiz__last-step__form__title text-white fw-400 mb-5">We’re already pinging APIs with the info you gave us. Once the marketing plan is ready, who can we send it to?</h4>
+                            <p class="s-quiz__last-step__form__input-name text-white mx-0 mx-sm-auto mx-xl-0">
+                                Your Name
+                            </p>
+                            <input type="text" class="s-quiz__last-step__form__input mx-0 mx-sm-auto mx-xl-0 mb-4"
+                                placeholder="Anna">
+                            <p class="s-quiz__last-step__form__input-name text-white mx-0 mx-sm-auto mx-xl-0">
+                                Your Number
+                            </p>
+                            <input type="text" class="s-quiz__last-step__form__input mx-0 mx-sm-auto mx-xl-0 mb-5"
+                                placeholder="+7 (999) 999 - 99 - 99">
+                            <button class="btn btn_red d-block align-self-center align-self-lg-start">Continue</button>
+                        </form>
+
+                        <div
+                            class="s-quiz__last-step__trap d-flex flex-column justify-content-between align-items-center">
+                            <div class="mb-4 mb-lg-0">
+                                <h4 class="s-quiz__last-step__trap__title text-center text-white fw-700"> Prefer to call?</h4>
+                                <h6 class="s-quiz__last-step__trap__discription text-center text-white fw-400">Call us directly and we can start our work.</h6>
+                            </div>
+
+                            <div>
+                                <h4 class="s-quiz__last-step__trap__title text-center text-white fw-400">CALL NOW
+                                </h4>
+                                <a href="#"
+                                    class="s-quiz__last-step__trap__title text-center text-white fw-700 text-decoration-none">(866)
+                                    204-2028</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- last-step -------------------------------------------->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<section class="container-fluid bg-s-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" srcset=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item d-flex align-items-center justify-content-center">
+                <a class="nav-link text-white text-center active" href="#item1">SERVICES</a>
+              </li>
+              <li class="nav-item d-flex align-items-center justify-content-center">
+                <a class="nav-link text-white text-center" href="#item2">ADVANTAGES</a>
+              </li>
+              <li class="nav-item d-flex align-items-center justify-content-center">
+                <a class="nav-link text-white text-center" href="#item3">PROCESS</a>
+              </li>
+              <li class="nav-item d-flex align-items-center justify-content-center">
+                <a class="nav-link text-white text-center" href="#item4">CASES</a>
+              </li>
+              <li class="nav-item d-flex align-items-center justify-content-center">
+                <a class="nav-link text-white text-center" href="#item5">ABOUT</a>
+              </li>
+              <li class="nav-item d-flex align-items-center justify-content-center mt-5 mt-lg-0 ms-0 ms-lg-5">
+                <button class="btn btn_border-red" data-bs-toggle="modal" data-bs-target="#exampleModal">Free Marketing Plan</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container">
+        <div class="row s-top align-items-center">
+            <div class="col-12 col-lg-6 wow fadeInLeft">
+                <h1 class="title title_big text-center text-lg-start">LEADS HUNTER</h1>
+                <h2 class="title title_medium text-center text-lg-start">a fast growing marketing agency</h2>
+                <img src="img/s-top/pic.png" alt="" srcset="" class="s-top_img-des d-block d-lg-none">
+                <p class="text-big mt-3 text-center text-lg-start"><span class="s-top__text-line">Setting sales records,</span> put you ahead of your competitors</p>
+                 
+                <button class="btn btn_red mt-5 d-block mx-auto mx-lg-0" data-bs-toggle="modal" data-bs-target="#exampleModal">Get your a free marketing plan</button>
+                <p class="s-top__text mt-4 text-center text-lg-start">Get a solution to develop your business</p>
+            </div>
+            <div class="col-12 col-lg-6 d-none d-lg-block">
+                <img src="img/s-top/pic.png" alt="" srcset="" class="s-top_img-des wow fadeInRight">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid s-speed mt-section" id="item1">
+    <img src="img/s-speed/bg.png" alt="" class="s-speed__bg-img">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="title title_medium text-center wow bounceInDown">Boost your business</h2>
+                <p class="text-center s-speed__discription mx-auto mt-3 wow bounceInUp">and get better results with the help of our professional team</p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 col-lg-6 d-flex flex-column align-items-start justify-content-center wow bounceInLeft">
+                <div class="d-flex align-items-center justify-content-between my-3">
+                    <img src="img/s-speed/ico/1.png" class="me-5 s-speed__ico" alt="">
+                    <p class="s-speed__text title_mini fw-700">Setting up PPC ads plan (Facebook + Instagram)</p>
+                </div>
+                <div class="d-flex align-items-center my-3">
+                    <img src="img/s-speed/ico/2.png" class="me-5 s-speed__ico" alt="">
+                    <p class="s-speed__text title_mini fw-700">Google Display network </p>
+                </div>
+                <div class="d-flex align-items-center my-3">
+                    <img src="img/s-speed/ico/3.png" class="me-5 s-speed__ico" alt="">
+                    <p class="s-speed__text title_mini fw-700">Website development</p>
+                </div>
+                <div class="d-flex align-items-center my-3">
+                    <img src="img/s-speed/ico/4.png" class="me-5 s-speed__ico" alt="">
+                    <p class="s-speed__text title_mini fw-700">SEO Optimization</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 wow bounceInUp">
+                <img src="img/s-speed/big-img.png" alt="" class="s-speed__img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container mt-section" id="item2">
+    <div class="row s-agency">
+        <div class="col-12">
+            <h2 class="title title_medium text-center wow bounceInDown">We will become</h2>
+            <h3 class=" title title_mini text-center title_line-bottom wow bounceInUp">the last marketing agency you work with</h3>
+            <p class="text-center s-agency__discription mx-auto mt-5">Because Leeds Hunter is just what you need!</p>
+        </div>
+    </div>
+    <div class="row s-agency__dark-container position-relative mt-section">
+        <div class="col-12 col-xl-4 d-flex flex-column justify-content-around order-1 order-xl-1 wow slideInLeft">
+            <div class="">
+                <div class="position-relative">
+                    <p class="s-agency__num text-center text-xl-end">01</p>
+                    <img src="img/s-agency/line-num/1.png" alt="" class="s-agency__num-line s-agency__num-line_1">
+                    <div class="s-agency__left-line"></div>
+                </div>
+                <p class="text-center text-xl-end fw-800">Others just make promises?  Instead of that our team <span class="text-white">analyses all your marketing issues</span> you may face before spending your first dollar. No more headaches</p>
+            </div>
+            <div class="">
+                <div class="position-relative">
+                    <p class="s-agency__num text-center text-xl-end">02</p>
+                    <img src="img/s-agency/line-num/2.png" alt="" class="s-agency__num-line s-agency__num-line_2">
+                    <div class="s-agency__right-line"></div>
+                </div>
+                 
+                <p class="text-center text-xl-end fw-800">Don't know what result to expect and just invest money? Our team
+                    <span class="text-white">conduct preliminary website AB tests and  advertising test</span> before launching.</p>
+            </div>
+        </div>
+        <div class="col-12 col-xl-4 order-3 order-xl-2">
+            <img src="img/s-agency/big-img.png" alt="" class="s-agency__img">
+        </div>
+        <div class="col-12 col-xl-4 d-flex flex-column justify-content-around order-2 order-xl-3 wow slideInRight">
+            <div class="">
+                <div class="position-relative">
+                    <p class="s-agency__num text-center text-xl-start">03</p>
+                    <img src="img/s-agency/line-num/3.png" alt="" class="s-agency__num-line s-agency__num-line_3">
+                    <div class="s-agency__left-line"></div>
+                </div>
+                  
+                <p class="text-center text-xl-start fw-800">With us, you will get quick results! You<span class="text-white"> won’t have to wait for months,</span> we deliver profit immediately.</p>
+            </div>
+            <div class="">
+                <div class="position-relative">
+                    <img src="img/s-agency/line-num/4.png" alt="" class="s-agency__num-line s-agency__num-line_4">
+                    <p class="s-agency__num text-center text-xl-start">04</p>
+                    <div class="s-agency__right-line"></div>
+                </div>
+                 
+                <p class="text-center text-xl-start fw-800">Work on  your project is carried out continuously every day. Our team stays in touch and constantly works on<span class="text-white"> improving the quality for a better result.</span></p>
+            </div>
+        </div>
+        <div class="s-agency__red-container d-flex flex-column flex-xl-row justify-content-around py-4">
+            <div>
+                 
+                <h3 class="title title_mini text-center text-xl-start">6 years of experience in Marketing business</h3>
+                <p class="fw-400 text-white text-center text-xl-start mb-4 mb-xl-0">qualifies us to give the best efficient and affordable plan</p>
+            </div>
+            <button class="btn btn_white d-block mx-auto mx-xl-0" data-bs-toggle="modal" data-bs-target="#exampleModal">Get a free marketing plan</button>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid position-relative p-0">
+
+    <img src="../img/bg-trap-and-option.png" alt="" class="bg-trap-and-option">
+
+    <div class="container-fluid mt-section s-trap position-relative">
+        <div class="s-trap__container mx-auto">
+            <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between s-trap__sum position-relative">
+                <p class="title title_mini fw-800 text-center text-lg-start s-trap__text">One marketing   <br>agency</p>
+                <img src="img/s-trap/+.png" alt="" class="my-2 my-lg-0">
+                <p class="title title_mini fw-800 text-center text-lg-start s-trap__text">Our experience</p>
+                <img src="img/s-trap/=.png" alt="" class="my-2 my-lg-0">
+                <p class="title title_mini fw-800 text-center text-lg-start s-trap__text">More money in <br> your business</p>
+            </div>
+            <img src="img/s-trap/mobile-img.png" alt="" class="mx-auto d-block d-lg-none w-100 s-trap__mobile-img position-relative">
+             
+            <p class="s-trap__text fw-700 mt-5 text-center text-lg-start">We give our partners <span class="text-white">an opportunity to scale their strategies</span> for maximum profit</span></p>
+            <img src="img/s-trap/tape.png" alt="" class="d-block d-lg-none s-trap__mobile-tape">
+            <img src="img/s-trap/img.png" alt="" class="s-trap__img d-none d-lg-block">
+        </div>
+    </div>
+
+    <div class="container" id="item3">
+        <div class="row s-option">
+            <div class="col-12">
+                <h2 class="title title_medium text-center wow bounceInDown">Choose on your own</h2>
+                <h3 class=" title title_mini text-center title_line-bottom wow bounceInUp">a way how we work with you</h3>
+                <p class="text-center s-option__discription mx-auto mt-5 wow bounceInUp">Contact us, and you won’t have to worry about where to find potential clients. We will help your company become better.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6 d-flex flex-column flex-lg-row my-5 wow bounceInUp" data-wow-delay="0.1s">
+                <div class="s-option__box-ico position-relative mx-auto me-lg-5">
+                    <img src="img/s-option/ico/1.png" alt="" class="position-absolute s-option__box-ico__ico-top">
+                    <img src="img/s-option/trap.png" alt="" class="position-absolute s-option__box-ico__ico-botton">
+                </div>
+                 
+                <p class="fw-700 text-center text-lg-start align-self-center"><span class="text-white">Effective solutions.</span> Our team of experts can provide all what you need in one place (setting up ads, developing a website and lead generation).</p>
+            </div>
+            <div class="col-12 col-lg-6 d-flex flex-column flex-lg-row  my-5 wow bounceInUp" data-wow-delay="0.2s">
+                <div class="s-option__box-ico position-relative mx-auto me-lg-5">
+                    <img src="img/s-option/ico/2.png" alt="" class="position-absolute s-option__box-ico__ico-top">
+                    <img src="img/s-option/trap.png" alt="" class="position-absolute s-option__box-ico__ico-botton">
+                </div>
+                  
+                <p class="fw-700 text-center text-lg-start align-self-center"><span class="text-white">Audience analysis.</span> You will get detailed audience analysis of potential customers , which will increase the efficiency of advertising and in promoting your company.</p>
+            </div>
+            <div class="col-12 col-lg-6 d-flex flex-column flex-lg-row  my-5 wow bounceInUp" data-wow-delay="0.3s">
+                <div class="s-option__box-ico position-relative mx-auto me-lg-5">
+                    <img src="img/s-option/ico/3.png" alt="" class="position-absolute s-option__box-ico__ico-top">
+                    <img src="img/s-option/trap.png" alt="" class="position-absolute s-option__box-ico__ico-botton">
+                </div>
+                 
+                <p class="fw-700 text-center text-lg-start align-self-center"><span class="text-white">Feedback.</span> Your company will receive not only high-quality work, but also daily help from professional teams of Leeds Hunter.</p>
+            </div>
+            <div class="col-12 col-lg-6 d-flex flex-column flex-lg-row  my-5 wow bounceInUp" data-wow-delay="0.4s">
+                <div class="s-option__box-ico position-relative mx-auto me-lg-5">
+                    <img src="img/s-option/ico/4.png" alt="" class="position-absolute s-option__box-ico__ico-top">
+                    <img src="img/s-option/trap.png" alt="" class="position-absolute s-option__box-ico__ico-botton">
+                </div>
+                 
+                <p class="fw-700 text-center text-lg-start align-self-center"><span class="text-white">High productivity.</span> We cooperate with you on affordable and accessible terms.  Our team know how to set up an advertising campaign, promote your brand and quickly bring customers to your business.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="position-relative mt-section container-fluid s-plan p-0">
+    <div class="s-plan__red-box position-absolute"></div>
+    <div class="s-plan__dark-box position-absolute"></div>
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-12 col-lg-7 s-plan__mobile-container pt-3">
+                <p class="title_mini fw-400 s-plan__text-mobile text-center text-xl-start">Our marketing agency will provide</p>
+                <h4 class="title title_small text-uppercase fw-700 text-center text-xl-start">AN Individual marketing plan</h4>
+                <p class="fw-400 title_mini mt-4 title_line-bottom s-plan__text-mobile text-center text-xl-start">for your company, that will show the stages of our work. We will achieve your goals!</p>
+                <p class="fw-400 text-white mt-5 text-center text-xl-start">You will receive a professional assessment and work from Leeds Hunter. We have a vast experience.</p>
+            </div>
+            <div class="col-11 col-lg-3 d-flex align-items-center justify-content-end">
+                <form action="#" class="d-flex flex-column form-page s-plan__bg-mobaile mx-auto">
+                    <input type="text" placeholder="Your name" class="form-page__input">
+                    <input type="text" placeholder="Your number" class="form-page__input">
+                    <button class="btn btn_red d-block mx-auto mt-4">Get an offer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid position-relative p-0 mt-section">
+    <img src="../img/bg-cases-and-why.png" alt="" class="bg-cases-and-why">
+    <div class="container s-cases s-cases_mt" id="item4">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="title title_medium text-center wow bounceInDown">Our cases</h2>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 mt-5">
+            <div class="col mb-5 wow bounceInLeft">
+                <div class="s-cases__img-box">
+                    <div class="s-cases__img-box__decor">
+                        <p class="s-cases__img-box__decor__sphere">•••</p>
+                    </div>
+                    <img src="img/s-cases/1.png" alt="" class="w-100">
+                </div>
+                
+    
+                <p class="fw-700 mt-4 text-white px-0 px-xl-3">Development of a landing page for healthy food delivery.</p>
+                <p class="fw-700 px-0 px-xl-3">Our specialists team made an individual analysis on this website. They started with the budget of $1,385. The goal on this project was to attract more clients. After setting up marketing strategy including layout, creative and user-friendly design by the first month conversion has been increased for 65%.</p>
+            </div>
+            <div class="col mb-5 wow bounceInUp">
+                <div class="s-cases__img-box">
+                    <div class="s-cases__img-box__decor">
+                        <p class="s-cases__img-box__decor__sphere">•••</p>
+                    </div>
+                    <img src="img/s-cases/2.png" alt="" class="w-100">
+                </div>
+                
+    
+    
+                <p class="fw-700 mt-4 text-white px-0 px-xl-3">Development of a landing page for the plastic windows company.
+                    </p>
+                <p class="fw-700 px-0 px-xl-3">The Specialist team has analyzed the niche of this project and made a marketing strategy for attracting clients.The budget of the whole project was $1850. After conversion optimization, creative and unique design by the first month conversion has increased by 57%.</p>
+            </div>
+            <div class="col mb-5 wow bounceInRight">
+                <div class="s-cases__img-box">
+                    <div class="s-cases__img-box__decor">
+                        <p class="s-cases__img-box__decor__sphere">•••</p>
+                    </div>
+                    <img src="img/s-cases/3.png" alt="" class="w-100">
+                </div>
+                
+    
+                <p class="fw-700 mt-4 text-white px-0 px-xl-3">Development of a landing page for the production of plastic bags and increasing customers.
+                    </p>
+                <p class="fw-700 px-0 px-xl-3">The client requests included attracting clients and redesigning his website. After audience target analysis, marketing strategy by PPC ads and website design, we reached a result of instant leads. In total 188 applications for a budget of $1,249 and the price of the lead is $6.64. The website CRO has increased by 41%.</p>
+            </div>
+            <div class="col mb-5 wow bounceInLeft">
+                <div class="s-cases__img-box">
+                    <div class="s-cases__img-box__decor">
+                        <p class="s-cases__img-box__decor__sphere">•••</p>
+                    </div>
+                    <img src="img/s-cases/4.png" alt="" class="w-100">
+                </div>
+                
+    
+    
+    
+                <p class="fw-700 mt-4 text-white px-0 px-xl-3">Promotion of social networks for furniture 
+                    companies.
+                    </p>
+                <p class="fw-700 px-0 px-xl-3">Our team made an individual analysis, customized the ads campaign and redesign the brand. The client started with the budget of $1,150. The goal on this project was to attract clients through social media channels and manage them under one account.  With FB ads over 1,000 live subscribers attracted to social media and got 35 new potential clients in one month.</p>
+            </div>
+            <div class="col mb-5 wow bounceInUp">
+                <div class="s-cases__img-box">
+                    <div class="s-cases__img-box__decor">
+                        <p class="s-cases__img-box__decor__sphere">•••</p>
+                    </div>
+                    <img src="img/s-cases/5.png" alt="" class="w-100">
+                </div>
+                
+    
+    
+                <p class="fw-700 mt-4 text-white px-0 px-xl-3">Full marketing for Eye Clinic with website-development, SEO and etc
+                    </p>
+                <p class="fw-700 px-0 px-xl-3">The Optices clinic had a request to scale up their business and attract clients. Starting from target audience analysis and unique website development, we set up PPC ads, SEO and lead generation. As a result, 150 leads were delivered with a budget of $1,629 and the lead price was $10.84. The website CRO has increased by 45%.</p>
+            </div>
+            <div class="col mb-5 wow bounceInRight">
+                <div class="s-cases__img-box">
+                    <div class="s-cases__img-box__decor">
+                        <p class="s-cases__img-box__decor__sphere">•••</p>
+                    </div>
+                    <img src="img/s-cases/6.png" alt="" class="w-100">
+                </div>
+                
+    
+                <p class="fw-700 mt-4 text-white px-0 px-xl-3">Redesign and PPC ads for the ar sales on credit  Center.
+                    </p>
+                <p class="fw-700 px-0 px-xl-3">The main goal of this project was to attract clients through advertising. After a solid analysis, the right solution for them was to redesign the website and also attract clients through PPC ads. As a result, 50 leads were given with a budget of $850, and at the end price per click $17.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container s-why mt-section">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="title title_medium text-center title_line-bottom wow bounceInDown">Why us?</h2>
+                <p class="text-center s-why__discription mx-auto mt-5 wow bounceInUp">Why people work with us?</p>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-lg-3 mt-5">
+            <div class="col d-flex flex-column flex-xl-row align-items-start">
+                <div class="s-why__ico-box align-self-center align-self-xl-start me-4">
+                    <img src="img/s-why/ico-red/1.png" alt="" class="s-why__red-ico">
+                    <div class="s-why__ico-box__white-box wow swing" data-wow-delay="0.2s">
+                        <div class="s-why__ico-box__sphere"></div>
+                        <img src="img/s-why/ico-white/1.png" alt="" class="s-why__ico-white">
+                    </div>
+                    
+                </div>
+                <p class="s-why__text-card fw-400 text-center text-xl-start mt-5 mt-xl-0 ms-0 ms-xl-4">
+                    You receive personalized information about your potential marketing strategies and statics.
+                </p>
+            </div>
+            <div class="col d-flex flex-column flex-xl-row align-items-start">
+                <div class="s-why__ico-box align-self-center align-self-xl-start me-4">
+                    <img src="img/s-why/ico-red/2.png" alt="" class="s-why__red-ico">
+                    <div class="s-why__ico-box__white-box wow swing" data-wow-delay="0.6s">
+                        <div class="s-why__ico-box__sphere"></div>
+                        <img src="img/s-why/ico-white/2.png" alt="" class="s-why__ico-white">
+                    </div>
+                    
+                </div>
+                <p class="s-why__text-card fw-400 text-center text-xl-start mt-5 mt-xl-0 ms-0 ms-xl-4">
+                    By cooperating with us, your company receives help from experts in the field of marketing development. We explore the niche of your field with an individual approach.
+                </p>
+            </div>
+            <div class="col d-flex flex-column flex-xl-row align-items-start">
+                <div class="s-why__ico-box align-self-center align-self-xl-start me-4">
+                    <img src="img/s-why/ico-red/3.png" alt="" class="s-why__red-ico">
+                    <div class="s-why__ico-box__white-box wow swing" data-wow-delay="0.8s">
+                        <div class="s-why__ico-box__sphere"></div>
+                        <img src="img/s-why/ico-white/3.png" alt="" class="s-why__ico-white s-why__ico-white_last-ico">
+                    </div>
+                    
+                </div>
+                <p class="s-why__text-card fw-400 text-center text-xl-start mt-5 mt-xl-0 ms-0 ms-xl-4">
+                    Our specialists are in touch with you regularly, if you have any questions or suggestions. 
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 wow bounceInUp">
+            <div class="col-12 col-xl-8 s-why__dark-card mx-auto p-5">
+                <h4 class="title title_mini text-center">Do you want to improve the efficiency of your business?</h4>
+                <button class="btn btn_red d-block mx-auto mt-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Yes, I want!</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt-section">
+
+    <footer class="container position-relative">
+        <img src="img/bg-footer.png" alt="" class="bg-footer">
+        <div class="row footer footer_mt">
+            <div class="col-12 d-flex flex-column align-items-center footer__inner">
+                <h3 class="title_medium text-uppercase text-center mb-4 footer__title m-0">Any questions?</h3>
+                <h4 class="title_mini footer__title-mini text-center fw-400">Contact us on social media</h4>
+                <div class="d-flex align-items-center mt-4">
+                    <a href="" class="mx-3 footer__ico">
+                        <img src="img/s-footer/telegram.png" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/leads_hunter_team/?utm_medium=copy_link" class="mx-3 footer__ico">
+                        <img src="img/s-footer/ins.png" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/leadshunteragency" class="mx-3 footer__ico">
+                        <img src="img/s-footer/f.png" alt="">
+                    </a>
+    
+                </div>
+            </div>
+        </div>
+        <div class="row mb-2 mt-3">
+            <div class="col-12">
+                <p class="fw-400 text-center">LEADSHUNTER 2021</p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="js/main.min.js"></script>
+</body>
+</html>
